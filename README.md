@@ -22,4 +22,4 @@ Usage
     
 and
 
-    $ python3.6 glitchtext_generator.py
+    $ python3.6 glitchtext_generator_cmd.py
