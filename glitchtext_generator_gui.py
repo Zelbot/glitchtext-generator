@@ -59,11 +59,14 @@ class Application:
         for textbox in textboxes:
             text = textbox.get()
 
-            if textbox == self.input_entry and self.gen.string != text:
-                self.gen.string = text
+            if textbox == self.strength_entry and not text.isdigit():
+                return
 
             if textbox == self.strength_entry and self.gen.strength != int(text):
                 self.gen.strength = int(text)
+
+            if textbox == self.input_entry and self.gen.string != text:
+                self.gen.string = text
 
     def generate_glitched_text(self, _):  # Second param is passed when the self.generate_button is pressed
         """
