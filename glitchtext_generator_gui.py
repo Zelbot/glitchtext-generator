@@ -60,7 +60,7 @@ class Application:
             text = textbox.get()
 
             if textbox == self.strength_entry and not text.isdigit():
-                return
+                continue
 
             if textbox == self.strength_entry and self.gen.strength != int(text):
                 self.gen.strength = int(text)
